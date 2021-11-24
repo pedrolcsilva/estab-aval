@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+  <head>
+      <title>HexTech</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <form id="princ">
+      <hgroup>
+        <h2 class="margin">HexTech Ferramentas</h2>
+        <p class="margin">Construindo o futuro</p>
+      </hgroup>
+
+      <main class="textfont">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="age">Idade:</label>
+        <input type="number" name="age" id="age" min="0" max="150"><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="city">Cidade:</label>
+        <input type="text" name="city" id="city"><br>
+        <label for="state">Estado:</label>
+        <input type="text" name="state" id="state"><br>
+        <label for="tips">O que você espera de nossa loja:</label>
+        <input type="text" name="tips" id="tips"><br>
+        <label for="quality">O que você achou da qualidade de nossas ferramentas:</label>
+        <input type="range" name="prodquality" id="prodquality" min="0" max="10" value="5" step="1" list="tickmarks">
+        <datalist id="tickmarks" style="--list-length: 11;"> <!--
+          ---><option>0</option><!--
+          ---><option>1</option><!--
+          ---><option>2</option><!--
+          ---><option>3</option><!--
+          ---><option>4</option><!--
+          ---><option>5</option><!--
+          ---><option>6</option><!--
+          ---><option>7</option><!--
+          ---><option>8</option><!--
+          ---><option>9</option><!--
+          ---><option>10</option><!--
+        ---></datalist>
+        <label for="attquality">O que você achou do nosso atendimento:</label>
+        <input type="range" name="attquality" id="attquality" min="0" max="10" value="5" step="1" list="tickmarks">
+        <datalist id="tickmarks" style="--list-length: 11;"> <!--
+          ---><option>0</option><!--
+          ---><option>1</option><!--
+          ---><option>2</option><!--
+          ---><option>3</option><!--
+          ---><option>4</option><!--
+          ---><option>5</option><!--
+          ---><option>6</option><!--
+          ---><option>7</option><!--
+          ---><option>8</option><!--
+          ---><option>9</option><!--
+          ---><option>10</option><!--
+        ---></datalist>
+
+        <button type="button" id="enviar" onclick="showAnswer();">Submit</button>
+      </main>
+    </form>
+
+    <form id="answer">
+        
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
